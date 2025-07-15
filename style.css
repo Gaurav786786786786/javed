@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -73,28 +75,28 @@ border-radius: 5px;
 
 .hero-about {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 .hero-contact {
 width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 
 }
 .hero-home-hero{
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 .hero-projects{
     width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 .hero-services{
  width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 } 
 
@@ -177,7 +179,7 @@ footer {
 }
 
 .footer-section h3 {
-  margin: bottom 10px;
+  margin bottom: 10px;
   font-size: 20px;
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
@@ -225,4 +227,51 @@ footer {
   color: red; /* or any color you want */
   background-color: #f0f0f0; /* optional */
   cursor: pointer; /* optional for better UX */
+}
+@media screen and (max-width: 768px) {
+  .Horizontal-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .Horizontal-nav ul li {
+    flex: none;
+    margin: 8px 0;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hero-about {
+    height:auto;
+    max-width: 100%;
+  }
+
+  .content, .form-section {
+    padding: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    text-align: center;
+  }
 }
