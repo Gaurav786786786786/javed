@@ -10,7 +10,7 @@
 <header class="navbar">
 <div class="logo">Digitech Surveillance Solutions</div>
 <div class="tagline">"Your Safety, Our Technology"</div>
-<nav class="Horizontal-nav">
+<nav class="Horizontal-nav" id="mainNav">
  <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="services.html">Services</a></li>
@@ -68,10 +68,12 @@ With 24/7 support, a proactive service model, and a strong belief in innovation,
   </div>
 </footer>
   </footer>
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
-    }
-  </script>
+  <!-- 👉 Back to Top Button -->
+<button id="backToTop" title="Back to top">&uarr;</button>
+<!-- 👉 Dark Mode Toggle Switch -->
+<label class="theme-switch">
+  <input type="checkbox" id="themeToggle"> Dark Mode
+</label>
+<script src="main.js"></script>
 </body>
 </html>
