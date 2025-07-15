@@ -48,43 +48,52 @@ In a world where security challenges are constantly evolving, Digitech remains c
 
   <section class="form-section">
     <h2>Contact Form</h2>
-    <form action="mailto:digitechservillance@gmail.com" method="POST" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+    <form action="https://formsubmit.co/digitechsurveillance@gmail.com" method="POST">
+    
+    <!-- Hidden fields for better control -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thankyou.html"> <!-- Redirect after success -->
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+    <!-- Name input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
 
-      <button type="submit">Send</button>
-    </form>
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <!-- Message textarea -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <!-- Submit button -->
+    <button type="submit">Send</button>
+  </form>
   </section>
 
  <footer>
   <div class="footer-container">
-
     <!-- Product Features -->
     <div class="footer-section">
       <h3>Product Features</h3>
       <ul>
-        <li>HD Camera</li>
-        <li>HD Starlight camera</li>
-        <li>IP camera & Starlight </li>
-        <li>PTZ Camera</li>
-        <li>WI-FI Camera</li>
-        <li>360-Degree PTZ and WI-FI Camera</li>
+        <li class="common-footer-text">HD Camera</li>
+        <li class="common-footer-text">HD Starlight camera</li>
+        <li class="common-footer-text">li>IP camera & Starlight </li>
+        <li class="common-footer-text">PTZ Camera</li>
+        <li class="common-footer-text">WI-FI Camera</li>
+        <li class="common-footer-text">360-Degree PTZ and WI-FI Camera</li>
       </ul>
     </div>
        <!-- Your Account -->
     <div class="footer-section">
       <h3>Your Account</h3>
-      <p class="param">Feel Free To Contact Us</p>
-      <p class="param"><strong>Digitech Surveillance Solutions</strong></p>
-      <p class="param">Shop No.6 UDA Complex Moti Nagar, Unnao-209801</p>
-      <p class="param">Mobile: +91 7755055550</p>
-      <p class="param">Email: <a href="mailto:digitechservillance@gmail.com">digitechservillance@gmail.com</a></p>
+      <p class="common-footer-text">Feel Free To Contact Us</p>
+      <p class="common-footer-text">Digitech Surveillance Solutions</strong></p>
+      <p class="common-footer-text">Shop No.6 UDA Complex Moti Nagar, Unnao-209801</p>
+      <p class="common-footer-text">Mobile: +91 7755055550</p>
+      <p class="common-footer-text">Email: <a href="mailto:digitechservillance@gmail.com">digitechservillance@gmail.com</a></p>
     </div>
   </footer>
 
@@ -94,6 +103,6 @@ In a world where security challenges are constantly evolving, Digitech remains c
 <label class="theme-switch">
   <input type="checkbox" id="themeToggle"> Dark Mode
 </label>
-<script src="main.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>

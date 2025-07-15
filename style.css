@@ -4,7 +4,7 @@
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: Arial, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -121,6 +121,9 @@ width: 100%;
   width: 100%;
   box-sizing: border-box;
   height: 70px;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
  }
 
 
@@ -204,7 +207,7 @@ footer {
 }
 
 .footer-section ul {
-  list-style-type: disc;
+  list-style-type: none;
   padding-left: 0px;
   margin: 0;
 }
@@ -227,19 +230,20 @@ footer {
     color:red; /* text color badalne ke liye */
     cursor: pointer;
 }
-.footer-section .param {
+.common-footer-text {
   background-color: var(--navbar-bg);
-  color: white;
-  cursor: pointer;
-  margin-bottom: 8px;
+  color: red;
+  margin: 0;
   padding: 4px 0;
-  list-style-type: disc;
   opacity: 0.7;
+  line-height: 0.9;
   transition: 0.3s;
+   font-weight: bold;
 }
+
 .footer-section .param:hover {
   background-color: #f0f0f0;
-  color: red;
+  color: greenyellow;
 }
 
 }
@@ -325,7 +329,6 @@ footer {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -365,14 +368,15 @@ body {
 /* 👉 Dark Mode Toggle */
 .theme-switch {
   position: fixed;
-  bottom: 30px;
-  left: 30px;
+  top: 10px;         /* ✅ Top of the page */
+  right: 10px;       /* ✅ Right corner */
   background: var(--navbar-bg);
   padding: 5px 10px;
   border-radius: 10px;
   color: var(--text);
   font-size: 14px;
   z-index: 1001;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Optional effect */
 }
 @media screen and (max-width: 600px) {
   h1 {
