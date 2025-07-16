@@ -54,7 +54,7 @@ body {
 
 .Horizontal-nav ul li a {
 display: block;
-color: white;
+color: red;
 text-decoration: none;
 font-weight: bold;
 padding: 8px 12px;
@@ -320,7 +320,7 @@ footer {
 }
 [data-theme="dark"] {
   --bg: #121212;
-  --text: #eee;
+  --text: red;
   --highlight: #4dabf7;
   --navbar-bg: #1f1f1f;
 }
